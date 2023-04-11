@@ -1,0 +1,75 @@
+:root {
+    --gutter: 20px;
+  }
+  
+  .clients {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .clients-section {
+    margin: 0 auto;
+  }
+
+  .clients-text {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .clients-title {
+    width: 100%;
+    color: var(--_color_4);
+    margin-top: 1rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .clients-image {
+    width: 25%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .clients-section section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px 0;
+    margin: 0 auto;
+  }
+
+  .clients-card-image img {
+    width: 150px;
+    margin: 50px auto;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .clients-image {
+      width: 75%;
+    }
+
+    .clients-section section {
+      //display: grid;
+      //grid-template-columns: 1fr 1fr;
+    }
+  
+    .clients-item {
+      padding: 5px;
+    }
+  
+    .clients-section p {
+      font-size: 1rem;
+      padding: 0 25px;
+    }
+
+    .clients-card-image img {
+      width: 150px;
+      margin: 50px auto;
+      background-position: center;
+      background-size: cover;
+    }
+  }

@@ -1,0 +1,247 @@
+#contact {
+  text-align: left;
+  background: var(--_color_4);
+}
+
+.elementor-shape-bottom svg {
+  width: calc(100% + 1.3px);
+  height: 40px;
+  display: block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.elementor-shape .elementor-shape-fill {
+  fill: var(--_color_4);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.elementor-shape {
+  left: 0;
+  width: 100%;
+}
+
+.elementor-shape-bottom {
+  bottom: 0px;
+}
+
+.elementor-shape[data-negative=false].elementor-shape-bottom, .elementor-shape[data-negative=true].elementor-shape-top {
+  /* -webkit-transform: rotate(180deg); */
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  margin-bottom: -2px;
+}
+  
+.footer {
+  width: 90%;
+  max-width: 1200px;
+  padding-top: 40px;
+  margin: 0 auto;
+  font-weight: 400;
+  line-height: 1.5em;
+  display: flex;
+  color: var(--_color_0);
+  flex-direction: row;
+}
+
+.footer-container {
+  font-weight: 400;
+  line-height: 1.5em;
+  flex: 1;
+  margin: 0 0px 10px;
+  text-align: left;
+}
+
+.footer-container h3 {
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0 0 24px;
+}
+
+.phone {
+  font-weight: 400;
+  line-height: 1.5em;
+  font-size: 0.8rem;
+  display: flex;
+}
+
+.phone svg {
+  width: 1.2rem;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: var(--_color_3);
+}
+
+.phone ul {
+  font-weight: 400;
+  line-height: 1.5em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.address {
+  font-weight: 500;
+  line-height: 1.5em;
+  font-size: 0.8rem;
+  padding: 40px 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--_color_0);
+  border-radius: 4px;
+
+}
+
+.address address {
+  font-weight: 400;
+  margin-top: 20px;
+  line-height: 1.5em;
+  font-style: normal;
+}
+
+
+.address a {
+  text-decoration: none;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 10px;
+  background: transparent;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--_color_0);
+  border: 1px solid var(--_color_3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.address a:hover {
+  background: var(--_color_3);
+  color: var(--_color_1);
+}
+  
+.footer-content {
+  font-size: 0.8rem;
+  text-align: left;
+  display: flex;
+}
+
+.footer-content table tbody tr th {
+  padding-right: 10px;
+}
+
+.footer-content table tbody tr td span {
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  padding: 5px 5px 5px 0;
+  color: var(--_color_0);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-content table tbody tr td span:hover {
+  border-bottom: 3px solid var(--_color_3);
+}
+
+.footer-content table tbody tr td a {
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  padding: 5px 5px 5px 0;
+  color: var(--_color_0);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.7rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-content table tbody tr td a:hover {
+  border-bottom: 3px solid var(--_color_3);
+}
+
+
+.footer-copy {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+  
+.footer-copy p {
+  color: var(--_color_0);
+  font-size: 0.7rem;
+  text-align: left;
+  flex: 8;
+  margin-bottom: 0;
+}
+
+.footer-button-up {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  flex: 4;
+}
+
+.footer-button-up span {
+  color: var(--_color_0);
+  width: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  padding: 10px 0;
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(0.5rem);
+    transform: translateY(0.5rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-weight: 400;
+    line-height: 1.5em;
+    display: grid;
+  }
+
+  .footer-container {
+    margin-top: 10px;
+  }
+}

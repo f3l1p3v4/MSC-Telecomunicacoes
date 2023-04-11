@@ -1,0 +1,31 @@
+.message {
+  position: fixed;
+  bottom: 8%;
+  right: 5%;
+  padding: 10px;
+  border-radius: 80%;
+  border: none;
+  background-color: #159a27;
+  color: var(--_color_0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.message-close {
+  display: none;
+}
+
+  
+.message svg {
+  width: 2rem;
+}
+
+@media (max-width: 350px) {
+  .message {
+    left: 80%;
+  }
+}
+  

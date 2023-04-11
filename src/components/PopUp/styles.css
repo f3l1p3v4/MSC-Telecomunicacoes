@@ -1,0 +1,130 @@
+.pop-info {
+  width: 100%;
+  max-width: 300px;
+  height: max-content;
+  background: #fff;
+  position: fixed;
+  top: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 30px 20px;
+  margin: 20px;
+  color: var(--_color_0);
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 2100;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.pop-info .close {
+  display: none !important;
+}
+
+.pop-info .header-text {
+  margin-bottom: 20px;
+  width: 100%;
+  color: #000;
+  text-align: center;
+  line-height: 30px;
+  background: #fff;
+}
+
+.pop-info .header-text span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--_color_3);
+}
+
+.pop-info section form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pop-info section form input {
+  width: 100%;
+  height: 44px;
+  font-size: 12px;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.pop-info section form input::placeholder {
+  color: #000;
+}
+
+.pop-info section form input:focus {
+  color: var(--_color_1);
+}
+
+.pop-info section form select {
+  width: 100%;
+  height: 54px;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 15px;
+  background: #fff;
+  color: rgb(2, 2, 2);
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.pop-info section form select:focus {
+  color: var(--_color_1);
+}
+
+.pop-info section form button {
+  width: 100%;
+  height: 44px;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid var(--_color_3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+.pop-info section form .btn-send {
+  background-color: var(--_color_3) !important;
+  color: var(--_color_0);
+}
+
+.pop-info section form .btn-cancel {
+  color: var(--_color_3);
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid var(--_color_3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  .pop-info {
+    min-width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    border-radius: 0;
+    margin: 0
+  }
+}

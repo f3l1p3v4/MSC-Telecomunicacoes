@@ -1,0 +1,220 @@
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  top: 0;
+  background: var(--_color_4);
+  color: var(--_color_0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(35, 35, 55, 0.7), rgba(35, 35, 55, 0.5), rgba(35, 35, 55, 0.3), rgba(35, 35, 55, 0.2)), url('../../../images/banner.jpg');
+}
+
+.header-elementor-shape-bottom svg {
+  width: calc(100% + 1.3px);
+  height: 40px;
+  display: block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.header-elementor-shape .header-elementor-shape-fill {
+  fill: #fff;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.header-elementor-shape {
+  left: 0;
+  width: 100%;
+}
+
+.header-elementor-shape-bottom {
+  bottom: 1px;
+}
+
+.header-elementor-shape[data-negative=false].header-elementor-shape-bottom, .header-elementor-shape[data-negative=true].header-elementor-shape-top {
+  /* -webkit-transform: rotate(180deg); */
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+header .navbar .navbar-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border-left: 1px solid #FFFFFF;
+  padding-left: 20px;
+}
+
+header .navbar .navbar-menu > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header .navbar .navbar-menu ul li {
+  display: grid;
+  align-items: center;
+  padding: 0 0.4rem;
+  margin: 0;
+}
+
+header .navbar .navbar-menu ul li .navbar-contact {
+  text-decoration: none;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+header .navbar .navbar-menu ul li .navbar-contact div p{
+  font-size: 0.8rem;
+}
+
+header .navbar .navbar-menu ul li .navbar-button p {
+  font-size: 1rem;
+
+}
+
+
+header .navbar .navbar-menu ul li .navbar-contact svg {
+  width: 1rem;
+  margin-right: 10px;
+  color: var(--_color_3);
+}
+
+header .navbar .navbar-menu ul li .navbar-button svg {
+  width: 1.6rem;
+  margin-right: 5px;
+  color: var(--_color_0);
+}
+
+header .navbar .navbar-menu ul li .navbar-button button {
+  background: #03bf26;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 4px;
+  color: var(--_color_0);
+  cursor: pointer;
+}
+
+header .sub-navbar {
+  display: flex;
+  align-items: left;
+  width: 100%;
+  background: var(--_color_3);
+}
+
+.sub-navbar-menu {
+  margin: 0;
+  display: flex;
+  align-items: left;
+  list-style: none;
+}
+
+.sub-navbar-menu > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.sub-navbar-menu ul li {
+  display: flex;
+  margin: 0 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.sub-navbar-menu ul li a {
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: var(--_color_0);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.7rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-navbar-menu ul li a:hover {
+  border-bottom: 3px solid var(--_color_3);
+}
+
+.sub-navbar-menu .sub-navbar-icon {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.sub-navbar-menu .sub-navbar-icon a {
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: var(--_color_0);
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-navbar-menu .sub-navbar-icon a svg {
+  font-size: 1.7rem;
+  margin-right: 10px;
+}
+
+.sub-navbar-menu .sub-navbar-icon a:hover {
+  opacity: 0.9;
+}
+
+.drawer-responsive {
+  display: none;
+}
+  
+@media (max-width: 768px) {
+  header .navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .navbar .navbar-menu {
+    display: none;
+  }
+
+  .sub-navbar-menu {
+    display: none;
+  }
+
+  .drawer-responsive {
+    display: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .drawer-responsive button {
+    margin: 0;
+  }
+}

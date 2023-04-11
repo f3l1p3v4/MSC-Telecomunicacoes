@@ -1,0 +1,110 @@
+.presentation {
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.presentation-content {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.presentation-text {
+  width: 100%;
+  max-width: 1100px;
+  padding: 50px 0;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation-title {
+  width: 100%;
+  max-width: 500px;
+  color: var(--color-text);
+  margin: 0 auto;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  /*${media.lessThan("small")`
+    font-size: 1.6rem;
+  `}*/
+}
+
+.presentation-description {
+  width: 100%;
+  max-width: 650px;
+  line-height: 1.3;
+  margin-top: 0px;
+  font-size: 1.2rem;
+  color: var(--color-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0.6rem  0 2rem;
+  /*${media.lessThan("small")`
+    font-size: 1rem;
+  `}*/
+}
+
+.presentation-button {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 auto;
+  border-radius: 25px;
+  padding: 8px 20px;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--_color_0);
+  background: var(--_color_3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  gap: 5px;
+}
+
+.presentation-button svg {
+  width: 1.6rem;
+}
+
+.presentation-button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .presentation {
+    width: 100%;
+    padding: 100px 20px;
+    margin-bottom: -1px;
+  }
+
+  .presentation-title {
+    max-width: 300px;
+    font-size: 2.4rem;
+  }
+
+  .presentation-description {
+    max-width: 350px;
+    font-size: 1rem;
+  }
+  
+  .presentation-button {
+    padding: 15px;
+    font-size: 0.8rem;
+  }
+
+  .presentation-card-image {
+    display: none;
+  }
+  
+}
