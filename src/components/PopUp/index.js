@@ -19,7 +19,7 @@ const handleSubmit = (e) => {
     );
 
     //Padrão
-    window.location.replace(`https://wa.me/+5567992656801?text=${message}`);
+    window.location.replace(`https://wa.me/+5567981697900?text=${message}`);
 
     setName("");
     setService("");
