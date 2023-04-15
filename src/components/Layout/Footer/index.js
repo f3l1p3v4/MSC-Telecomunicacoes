@@ -76,22 +76,28 @@ const Footer = () => {
               </div>
           <div className="footer-container">
             <h3>CELTRAL DE ATENDIMENTOS</h3>
-            <div className="phone">
+            <div className="address">
               <Location />
               <ul>
-                <li>Rua Teste teste teste, 000 – teste teste TS</li>
+                <li>R. Mozart Calheiros Nº660 <br/>B. Água Boa - Dourados MS</li>
               </ul>
             </div>
             <div className="phone">
               <Phone />
               <ul>
-                <li>(12) 3456-7890</li>
+                <li>(67) 98169-7900</li>
+              </ul>
+            </div>
+            <div className="phone">
+              <Phone />
+              <ul>
+                <li>(67) 99828-3814</li>
               </ul>
             </div>
             <div className="phone">
               <EmailOutline />
               <ul>
-                <li>teste@gmail.com</li>
+                <li>msc.telecom.ms@gmail.com</li>
               </ul>
             </div>
             <div className="phone">
