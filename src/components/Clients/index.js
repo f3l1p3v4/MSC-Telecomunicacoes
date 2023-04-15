@@ -26,6 +26,8 @@ const Clients = () => {
     slidesToShow: 5,
     slidesToScroll: 3,
     autoplay: true,
+    nextArrow: false,
+    prevArrow: false,
     autoplaySpeed: 2000,
     responsive: [
       {
